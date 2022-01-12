@@ -1,0 +1,106 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+/**
+    Aqui empieza el ejemeplo de FLEX-GROW
+
+
+    En el id original es el nav contenedora de las cajas, que tiene un ancho de 600 y un alto de 150px
+ */
+#original{
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+}
+/*
+    Las tres cajas tiene estas medidas y las flotamos para que queden unas al lado de otras
+ */
+#caja1, #caja2, #caja3{
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 23px ;
+    float: left;
+}
+/**
+ Aqui vienee y aplicamos estas cajas el diplay flex con el que luego cogeremos las caja con display grow
+ */
+#ejemplo-flex-grow{
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+
+}
+
+#caja5, #caja6, #caja7{
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 23px ;
+
+}
+/**
+ Aqui vienee y aplicamos flex-grow para que esta caja se haga mas grande para ocupar todo el espacio, si ponemos un 0,
+  hace que todas las cajas queden con el mismo tamaño ya que tiene su funcion por defecto de display:flex; y si poneos
+  un 1 o otro numero hace que esta caja se haga mas grande que el resto y la otras mantengan su tamaño original.
+ */
+#caja6{
+    flex-grow: 1;
+
+}
+/**
+        Aqui empieza el FLEX-SHRING
+
+        En este caso disponemos de una caja mas para ver como se sale de la caja y con shring hacemos que
+        quepan todas una al lado de la otra y no se desborde y reduzca su tamaño y la arquitectura de cajas
+        es igual que la anterior con su medidas similares y organizacion.
+ */
+#original2{
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+
+}
+
+#caja11, #caja12, #caja13, #caja14{
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 23px ;
+    float: left;
+}
+/**
+ Aqui vienee y aplicamos estas cajas el diplay flex con display grow
+ */
+#ejemplo-flex-shrink{
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+
+}
+
+
+#caja15, #caja16, #caja17, #caja18{
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 23px ;
+
+}
+/**
+esta caja se le aplica el flex-shrink, si ponemos 0 aqui se quede en su tamaño natural y se reducen
+el resto del las cajas y si poneos el 1 se quedan todas con un tamñao por igual.
+Apartir del 1 hacemos que a mayor numero sea menor su proporcion respecto al resto de cajas, si ponemos un 2 es
+la mitad que las cajas que le rodean, si ponemos un 3 es la tercera parte y asi sucesivamente
+ */
+#caja16{
+
+    flex-shrink: 2;
+}
