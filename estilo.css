@@ -104,3 +104,57 @@ la mitad que las cajas que le rodean, si ponemos un 3 es la tercera parte y asi 
 
     flex-shrink: 2;
 }
+
+/**
+            FLEX-BASIS
+
+
+ */
+#original3{
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+
+}
+
+#caja21, #caja22, #caja23, #caja24{
+
+    height: 30px;
+    border: 1px solid black;
+
+    float: left;
+}
+
+/**
+
+    Aqui display flex como en los anteriores ejemplos
+ */
+
+#ejemplo-flex-basis{
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+
+}
+
+/**
+    Flex-basis tiene 4 valores posible numerico|auto|initial|inherit estos valores hacen todos referencia al
+    ancho de la caja es parecido al width, con la diferencia que es flexible, si ponemos un numero en pixel o porcentajes
+    coge ese tamaño la caja o si es menor al contendo coge el tamaño del contenido, ahora con auto se ajusta la caja al
+    contenido y con "initial" coje un valor predeterminado y con inherit hereda del padre esa propiedad.
+ */
+#caja25, #caja26, #caja27{
+
+    height: 30px;
+    border: 1px solid black;
+
+
+    flex-basis:140px;
+}
+#caja25{
+
+}
+
