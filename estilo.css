@@ -114,9 +114,9 @@ li a{
 }
 /**
 esta caja se le aplica el flex-shrink, si ponemos 0 aqui se quede en su tamaño natural y se reducen
-el resto del las cajas y si poneos el 1 se quedan todas con un tamñao por igual.
-Apartir del 1 hacemos que a mayor numero sea menor su proporcion respecto al resto de cajas, si ponemos un 2 es
-la mitad que las cajas que le rodean, si ponemos un 3 es la tercera parte y asi sucesivamente
+el resto del las cajas y si poneos el 1 se quedan todas con un tamñao por defecto.
+Apartir del 1 hacemos que a mayor numero sea menor su proporcion respecto al resto de cajas, ya que como se dividen en
+mas partes el espacio las otras cogen las mis proporciones por igual y esta coge solo una y por eso, se reduce su tamaño.
  */
 #caja16{
 
@@ -178,7 +178,10 @@ la mitad que las cajas que le rodean, si ponemos un 3 es la tercera parte y asi 
 /**
             FLEX-WRAP
  */
-
+/**
+    Aqui estan las cajas en su estado natural y se sobresalen del contendor,
+    ya que ocupan mas espacio su contenido que el contendor
+ */
 #original4{
     width: 600px;
     height: 150px;
@@ -191,17 +194,23 @@ la mitad que las cajas que le rodean, si ponemos un 3 es la tercera parte y asi 
     height: 30px;
     border: 1px solid black;
     margin: 23px ;
-    float: left;
+
     background-color: darksalmon;
 }
+/**
+            FLEX-WRAP:NOWRAP
 
-.ejemplo-flex-wrap{
+    Este parametro de flex se aplica a la caja contendora no a sus cajas contenidas, el nowrap ajusta las caja a una
+    fila y hace que ocupen el espacio libre y se repartan entre las cajas a partes iguales.
+ */
+#ejemplo-flex-nowrap{
     width: 600px;
     height: 150px;
     border: 1px solid black;
     margin: 50px;
     display: flex;
     background-color: olivedrab;
+    flex-wrap: nowrap;
 }
 
 #caja35, #caja36, #caja37{
@@ -210,7 +219,23 @@ la mitad que las cajas que le rodean, si ponemos un 3 es la tercera parte y asi 
     border: 1px solid black;
     background-color: darksalmon;
     margin: 23px;
-    flex-wrap: nowrap;
+
+}
+
+/**
+        FLEX-WRAP:WRAP
+    Aqui mantiene el tamaño de las cajas lo unico que le indica al css que pueden haber cambiado de linea
+    las cajas ordenadas
+
+ */
+#ejemplo-flex-wrap{
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+    background-color: olivedrab;
+    flex-wrap: wrap;
 }
 #caja38, #caja39, #caja30{
     width: 250px;
@@ -218,5 +243,28 @@ la mitad que las cajas que le rodean, si ponemos un 3 es la tercera parte y asi 
     border: 1px solid black;
     background-color: darksalmon;
     margin: 23px;
-    flex-wrap: wrap;
+
+}
+
+/**
+        FLEX-WRAP:WRAP-REVERSE
+
+     Aqui realiza exatamente lo mismo que el WRAP pero a la inversa ordenando al contraio las cajas.
+ */
+#ejemplo-flex-wrap-reverse{
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+    background-color: olivedrab;
+    flex-wrap: wrap-reverse;
+}
+#caja40, #caja41, #caja42{
+    width: 250px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: darksalmon;
+    margin: 23px;
+
 }
