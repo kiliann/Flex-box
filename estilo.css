@@ -268,3 +268,290 @@ mas partes el espacio las otras cogen las mis proporciones por igual y esta coge
     margin: 23px;
 
 }
+
+/**
+        JUSTIFY-CONTENT: FLEX-START
+
+        Aquí esta propiedad es como la inicia por defecto el justify-content
+ */
+/*
+   Aqui es aun sin aplicar el justify-content
+ */
+#original50{
+
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+    background-color: #305fb6;
+
+
+}
+#caja50, #caja51, #caja52{
+
+    height: 30px;
+    border: 1px solid black;
+
+    float: left;
+    background-color: powderblue;
+}
+/**
+        El flex-star es el Predeterminado y como podemos ver no modifica el contenido ni el orden de las cajas.
+ */
+#ejemplo-flex-start{
+
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+    background-color: #305fb6;
+    justify-content: flex-start;
+
+}
+#caja55, #caja56, #caja57{
+
+    height: 30px;
+    border: 1px solid black;
+
+    float: left;
+    background-color: powderblue;
+}
+
+/**
+    EL JUSTIFY-CONTENT:FLEX-END
+
+    Esta propiedad hace el caso contrario ya que lleva al final de la flexion las cajas las pone en la dirección contraria
+    a la que esta por defecto como vemos el caso anterior.
+ */
+#ejemplo-flex-end{
+
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+    background-color: #305fb6;
+    justify-content: flex-end;
+
+}
+#caja58, #caja59, #caja60{
+
+    height: 30px;
+    border: 1px solid black;
+
+    float: left;
+    background-color: powderblue;
+}
+
+/**
+    JUSTIFY-CONTENT:CENTER
+
+    Esta propiedad centra el conetido en la caja que esta contenida
+ */
+
+#ejemplo-flex-center{
+
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+    background-color: #305fb6;
+    justify-content: center;
+
+}
+#caja61, #caja62, #caja63{
+
+    height: 30px;
+    border: 1px solid black;
+
+    float: left;
+    background-color: powderblue;
+}
+
+/**
+    JUSTIFY-CONTENT:SPACE-BETWEEN
+
+    Se destibuyen las caja que la primera este en el inicio y la ultima al final de la linea todas ellas repartidas
+    de forma uniforme
+ */
+#ejemplo-space-between{
+
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+    background-color: #305fb6;
+    justify-content: space-between;
+
+}
+#caja64, #caja65, #caja66{
+
+    height: 30px;
+    border: 1px solid black;
+
+    float: left;
+    background-color: powderblue;
+}
+
+
+/**
+     JUSTIFY-CONTENT:SPACE-AROUND
+
+     Aqui se distribuye el espacio que ocupa cada caja a su alrededor por igual. Lo que quiere decir que tendran todas las
+     cajas el mismo espacio acada lado.
+ */
+
+#ejemplo-space-around{
+
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+    background-color: #305fb6;
+    justify-content: space-around;
+
+}
+#caja67, #caja68, #caja69{
+
+    height: 30px;
+    border: 1px solid black;
+
+    float: left;
+    background-color: powderblue;
+}
+
+/**
+           JUSTIFY-CONTENT:SPACE-EVENLY
+
+     Esta propiedad parece similar a la anterio, pero su diferencia es que hace que entre una caja y otra tengan el mismo
+     espacio y no se distribuyan por todo el espacion del contenedor.
+ */
+#ejemplo-space-evenly{
+
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+    background-color: #305fb6;
+    justify-content: space-evenly;
+
+}
+#caja70, #caja71, #caja72{
+
+    height: 30px;
+    border: 1px solid black;
+
+    float: left;
+    background-color: powderblue;
+}
+
+/**
+            ALIGN-ITEM
+ */
+
+#original80{
+
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+    background-color: #e54444;
+
+
+}
+#caja80, #caja81, #caja82{
+
+    height: 30px;
+    border: 1px solid black;
+
+    float: left;
+    background-color: powderblue;
+}
+/*
+    ALIGN-ITEM:FLEX-START
+
+    El flex star trae las caja al inicio de la primera linea como su colocaión por defecto.
+ */
+
+#ejemplo-align-flex-star{
+
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+    background-color: #e54444;
+    align-items: flex-start;
+
+
+}
+#caja83, #caja84, #caja85{
+
+    height: 30px;
+    border: 1px solid black;
+
+    float: left;
+    background-color: powderblue;
+}
+
+/*
+    ALIGN-ITEM:FLEX-END
+
+    El flex end lleva las caja abajo de su contenedor a la ultima fila.
+ */
+#ejemplo-align-flex-end{
+
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+    background-color: #e54444;
+    align-items: flex-end;
+
+
+}
+#caja86, #caja87, #caja88{
+
+    height: 30px;
+    border: 1px solid black;
+
+    float: left;
+    background-color: powderblue;
+}
+
+/*
+    ALIGN-ITEM:CENTER
+
+
+    Aqui se centra el contenido de forma vertical como las anteriores veces de forma que queda en las fila del medio.
+ */
+
+#ejemplo-align-center{
+
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+    background-color: #e54444;
+    align-items: center;
+
+
+}
+#caja90, #caja91, #caja92{
+
+    height: 30px;
+    border: 1px solid black;
+
+    float: left;
+    background-color: powderblue;
+}
+
