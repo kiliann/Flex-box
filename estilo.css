@@ -555,3 +555,27 @@ mas partes el espacio las otras cogen las mis proporciones por igual y esta coge
     background-color: powderblue;
 }
 
+/**
+ALIGN-ITEM:STRECH
+Aqui distribuye todo el contenido portoda la caja de forma vertical ocupando todo el espacio que tiene.
+ */
+#ejemplo-align-strech{
+
+    width: 600px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+    display: flex;
+    background-color: #e54444;
+    align-items: stretch;
+
+
+}
+#caja94, #caja95, #caja96{
+
+    height: 30px;
+    border: 1px solid black;
+
+    float: left;
+    background-color: powderblue;
+}
